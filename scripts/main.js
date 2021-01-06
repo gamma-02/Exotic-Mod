@@ -5,5 +5,5 @@ var lastStand = extend(SectorPreset, "last-stand", Planets.serpulo, 69, {
   difficulty: 25,
   captureWave: 150,
   alwaysUnlocked: true,
-  research: "ground-zero"
+  research:"groundZero",
 });
