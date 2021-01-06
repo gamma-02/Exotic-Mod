@@ -1,6 +1,6 @@
 require("units/hellfire")
 
-const lastStand = extend(SectorPreset, "last-stand", Planets.sserpulo, 69, {
+var lastStand = extend(SectorPreset, "last-stand", Planets.serpulo, 69, {
   localizedName: "Last Stand",
   difficulty: 25,
   captureWave: 150,
