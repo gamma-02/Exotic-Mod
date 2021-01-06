@@ -1,0 +1,38 @@
+type: PowerTurret
+localizedName: Prominence
+description: A massive plasma launcher. Fires a single shot that vaporizes almost anything it hits. Extremely expensive. Recommended only for manual firing, due to its slow reload.
+size: 14
+health: 155225500
+range: 8192
+recoilAmount: 32
+reloadTime: 6550
+powerUse: 255005
+shootShake: 30
+shootType: {
+  type: ContinuousLaserBulletType
+  keepVelocity: true
+  length: 27
+  width: 11
+  damage: 32550050
+  speed: 5
+  hitEffect: impactcloud
+  lifetime: 550
+  drag: 0
+  fadeTime: 15
+  incendAmount: 1
+  incendChance: 1
+  lenscales: [1, 1.2, 1.275, 1.325]
+  colors: [000000, 4e4e4e, a0a0a0, ffffff]
+}
+requirements: [
+  lead/125550
+  silicon/355450
+  surge-alloy/35500
+  bluewolframite/125340
+  draconium/115440
+  amethyst-gem/95520
+  cookienite/25450
+  shadow/15520
+]
+research: solar-flare
+category: turret

@@ -1,12 +1,12 @@
-name: Shadow Pulsar
+localizedName: Shadow Pulsar
 description:
   '''
   An enhanced Quantum Point Generator. Pulses waves of destructive Shadow energy instead of quantum sorcery.
   Heavily weakens enemies.
   '''
 type: ItemTurret
-reload: 480
-recoil: 2
+reloadTime: 480
+recoilAmount: 2
 shootCone: 30
 range: 400
 heatColor: 000000
@@ -19,15 +19,15 @@ spread: 0.05
 targetAir: true
 targetGround: true
 maxAmmo: 20
-ammo: {
+ammoTypes: {
   shadow: {
     type: BasicBulletType
-    bulletSprite: exotic-mod-qpg-wave
+    sprite: exotic-mod-qpg-wave
     backColor: 000000
     frontColor: 474747
     speed: 12
-    bulletHeight: 48
-    bulletWidth: 8
+    height: 48
+    width: 8
     drawSize: 0
     hitSize: 16
     pierce: true
@@ -44,7 +44,7 @@ ammo: {
       name: shadowenergy
       speedMultiplier: 1
       damageMultiplier: 0.6
-      armorMultiplier: 0.2
+      healthMultiplier: 0.2
       damage: 250
       color: 000000
       effect: none

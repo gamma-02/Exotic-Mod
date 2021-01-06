@@ -1,0 +1,14 @@
+localizedName: Large Draconium Wall
+description:
+  '''
+  The second most durable wall. It has the capability to deflect bullets.
+  Spans multiple tiles.
+  '''
+type: Wall
+health: 6720400
+size: 2
+requirements: [
+  draconium/24
+]
+category: defense
+research: draconium-wall

@@ -1,16 +1,15 @@
 type: ImpactReactor
-name: "[green]Arc Reactor"
-description: The ultimate reactor. Uses shadow to generate massive amounts of power. Requires supercoolant to run as well.
-itemDuration: 600
-liquidCapacity: 1000
+localizedName: Arc Reactor
+description: A massive antimatter reactor. Uses incredible amounts of power to convert shadow into antimatter, which then is reacted with matter to generate massive amounts of power. 
+itemDuration: 120
+liquidCapacity: 1400
 size: 8
 hasLiquids: true
-powerProduction: 1000000
-plasmas: 4
+powerProduction: 436550
 plasma1: 666666
 plasma2: 3b3b3b
 consumes: {
-  power: 100
+  power: 15430
   items: {
     items: [
       shadow/1
@@ -18,13 +17,22 @@ consumes: {
   }
   liquid: {
     liquid: supercoolant
-    amount: 10
+    amount: 3.8
   }
 }
 requirements: [
-  copper/1
+  copper/13550
+  lead/14330
+  silicon/13550
+  graphite/7550
+  thorium/8540
+  surge-alloy/3500
+  amethyst-gem/4450
+  bluewolframite/4560
+  draconium/3530
+  shadow/540
 ]
 category: power
-activeSound: beam
-activeSoundVolume: 0.5
+ambientSound: beam
+ambientSoundVolume: 0.5
 research: fusion-reactor

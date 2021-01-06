@@ -1,12 +1,12 @@
 type: Separator
-name: Oil Seperator
+localizedName: Advanced Separator
 size: 4
 solid: true
 hasPower: true
 hasLiquids: true
 hasItems: true
-liquidCapacity: 34
-craftTime: 34
+liquidCapacity: 3000
+craftTime: 60
 spinnerSpeed: -5
 requirements: [
   lead/300
@@ -19,21 +19,23 @@ requirements: [
 consumes: {
   power: 5.4
   liquid: {
-    liquid: oil
-    amount: 0.1
-    timePeriod: 34
+    liquid: mag-slag
+    amount: 0.2
   }
 }
+
 results: [
+  thorium/4
+  titanium/6
+  copper/10
+  lead/10
+  coal/10
+  wolframite/2
   draconium/2
   amethyst/3
-  wolframite/3
-  cookienite/3
-  thorium/4
-  titanium/5
-  copper/5
-  lead/5
+  cookienite/4
   shadow/1
 ]
+
 category: crafting
 research: separator

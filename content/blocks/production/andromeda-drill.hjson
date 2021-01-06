@@ -1,9 +1,10 @@
-name: Andromeda Drill
-description: A Powerful Drill made from Amethyst
+localizedName: Andromeda Drill
+description: A Powerful Drill made from Amethyst. 
 type: Drill
 size: 3
-tier: 10
-drillTime: 0.1
+tier: 8
+drillTime: 4
+liquidBoostIntensity: 2.4
 drawRim: true
 heatColor: E47AFF
 requirements: [
@@ -13,7 +14,16 @@ requirements: [
   lead/20
   copper/10
 ]
+consumes: {
+  power: 4
+  liquid: {
+    liquid: cryofluid
+    amount: 0.3
+    booster: true
+    optional: true
+  }
+}
 category: production
-idleSound: build
-idleSoundVolume: 0.05
+ambientSound: build
+ambientSoundVolume: 0.05
 research: electrum-drill

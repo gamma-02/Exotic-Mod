@@ -1,36 +1,194 @@
-type: doubleTurret
-name: The Dragons Roar
-description: A unique Spectre... Build it... watch it fire.
+type: ItemTurret
+localizedName: The Dragons Roar
+description: A unique Spectre... Build it... watch this world burn to ashes.
 targetAir: true
 targetGround: true
-health: 195000
+health: 195511050
 size: 8
-shotWidth: 8
 inaccuracy: 5
-spread: 0
-reload: 1
-shots: 10
-recoil: 3
+spread: 8
+reloadTime: 1
+shots: 2
+alternate: true
+recoilAmount: 3
 shootEffect: shootBig
-ammoUseEffect: shellEjectBig
-shootCone: 25
-rotatespeed: 1000
-range: 1600
-maxAmmo: 100
+ammoUseEffect: casing3
+shootCone: 1
+rotateSpeed: 1
+range: 2000
+maxAmmo: 200
+xRand: 20
 outlineIcon: false
-ammo: {
-  draconium: {
-    bulletSprite: exotic-mod-dragonbolt
+ammoTypes: {
+  scrap: {
+    sprite: exotic-mod-dragonbolt
     type: MissileBulletType
     trailColor: C93A3A
     speed: 12
-    damage: 10000
-    splashDamage: 9000
+    damage: 125
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+  }
+  sand: {
+    sprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 60
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+  }
+  copper: {
+    sprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 225
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+  }
+  lead: {
+    sprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 290
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+  }
+  metaglass: {
+    sprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 290
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+    fragBullets: 10
+    fragBullet: {
+      sprite: exotic-mod-dragonbolt
+      type: MissileBulletType
+      trailColor: c93a3a
+      damage: 290
+      speed: 8
+      width: 8
+      height: 8
+      shrinkX: 1
+      shrinkY: 1
+      lifetime: 10
+    }
+  }
+  amethyst-gem: {
+    damage: 143568
+    speed: 10
+    lifetime: 120
+    reloadMultiplier: 0.5
+    ammoMultiplier: 1
+    sprite: exotic-mod-dragonbolt
+    pierce: true
+    pierceBuilding: true
+    frontColor: C93A3A
+    backColor: 590707
+    trailColor: C93A3A
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    homingRange: 480
+    homingPower: 90
+    fragBullets: 10
+    fragBullet: {
+      type: LaserBulletType
+      damage: 12569
+      lifetime: 120
+    }
+  }
+  bluewolframite: {
+    damage: 164550
+    speed: 10
+    lifetime: 120
+    reloadMultiplier: 0.25
+    ammoMultiplier: 1
+    sprite: exotic-mod-dragonbolt
+    pierce: true
+    pierceBuilding: true
+    frontColor: C93A3A
+    backColor: 590707
+    trailColor: C93A3A
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    homingRange: 480
+    homingPower: 90
+    lightning: 10
+    lightningLength: 7
+    lightningColor: 87a3ff
+    fragBullets: 25
+    fragBullet: {
+      type: LightningBulletType
+      damage: 150987
+      lightningLength: 20
+    }
+  }
+  draconium: {
+    sprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 214550
+    splashDamage: 20000
     splashDamageRadius: 32
-    bulletWidth: 24
-    bulletHeight: 24
-    bulletShrink: 0
-    lifetime: 1200
+    width: 24
+    height: 24
+    shrinkX: 0
+    shrinkY: 0
+    lifetime: 120
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
@@ -38,40 +196,37 @@ ammo: {
     homingPower: 90
     ammoMultiplier: 5
     hitShake: 1
+    pierce: true
+    pierceBuilding: true
     frontColor: C93A3A
     backColor: 590707
-    fragBullets: 10
+    fragBullets: 100
     fragBullet: {
-      bulletSprite: exotic-mod-dragonbolt
-      lifetime: 600
-      damage: 5000
-      splashDamage: 100
-      splashDamageRadius: 200
-      type: MissileBulletType
-      trailColor: C93A3A
+      type: LiquidBulletType
+      liquid: mag-slag
+      damage: 24000
+      trailColor: c93a3a
       speed: 8
-      bulletWidth: 8
-      bulletHeight: 8
-      bulletShrink: 0
-      homingPower: 90
-      homingRange: 90
-      hitShake: 0.5
-      frontColor: C93A3A
-      backColor: 590707
+      lifetime: 0
+      status: burning
+      incendChance: 1
+      incendSpread: 16
+      incendAmount: 64
+      makeFire: true
     }
   }
 }
 requirements: [
-  titanium/1600
-  lead/1200
-  copper/1200
-  graphite/1550
-  thorium/1500
-  plastanium/1105
-  surge-alloy/1400
-  amethyst-gem/1400
-  bluewolframite/1800
-  draconium/1950
+  titanium/26000
+  lead/22000
+  copper/22000
+  graphite/15500
+  thorium/25000
+  plastanium/21050
+  surge-alloy/24000
+  amethyst-gem/14000
+  bluewolframite/18000
+  draconium/19500
   shadow/1200
 ]
 category: turret

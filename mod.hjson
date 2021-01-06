@@ -1,31 +1,13 @@
 name: exotic-mod
-displayName: "[gold]Exotic [red]Mod"
-author:
-  '''
-  [red]K103908 
-  (Hjsoner, Leader I think) 
-  [blue]Blue[#002990]Wolf[#001F6E][Gaming]
-  [blue](Mapper, [#002990]Spriter, [#001F6E]Hjsoner)[]
-  [purple]Andromeda 
-  (Mapper)
-  [#FCC21B]Meep of Faith
-  (Spriter, Hjsoner, [#5c0606]Lost in scripting hell[#FCC21B])
-  '''
+displayName: Exotic Mod
+author: "K103908, BlueWolf, MEEP Of Faith, AndromedaFallen"
 description:
   '''
   We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
-  [red]New Weapons Incoming.
-  [cyan]Update Log:
-  Oil Seperator
-  New:
-    Hellfire
-  Under Developement:
-    Fearless
-    Plastanium Forge
-    Supercoolant Mixer
-    Shadow Pulsar
-    Arc Reactor
-    MEEP's over-excessive custom effects
-  [green]More to come!
+  Update log:
+    BlueWolf is respriting the mod, so your precious eyes are saved.
+    Exotic is being alpha playtested in attack, so some rebalancing is going on.
+    Oh and hellfire has more armor. good luck :)
   '''
-version: 2.197
+version: 584 alpha
+minGameVersion: 122

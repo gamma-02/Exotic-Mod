@@ -1,27 +1,27 @@
-type: RepairDrone
-name: Ghost
+type: flying
+localizedName: Ghost
 description: A stronger spirit repair drone.
 speed: 2
-mass: 0.5
 drag: 0.1
 flying: true
-rotateWeapon: true
-health: 2500
+health: 244550
 engineOffset: 12
-range: 90
-shootCone: 30
-attackLength: 40
-weapon: {
+weapons: [
+{
   name: ghostregenerator
-  length: 1.5
+  shootCone: 30
+  rotate: true
+  mirror: false
+  x: 0
+  y: 12
   reload: 1
-  width: 0.5
-  alternate: true
   recoil: 2
   bullet: {
-    type: HealBulletType
+    type: LaserBoltBulletType
     speed: 4
+    collidesTeam: true
     lifetime: 90
     healPercent: 1.66666667
+    }
   }
-}
+]

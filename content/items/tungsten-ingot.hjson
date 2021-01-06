@@ -1,5 +1,5 @@
-type: material
 name: Tungsten
-description: Wolframite refined into an ingot.
+description: Refined wolframite. Safe for structural use, though it now lacks a magnetic field.
 cost: 6.9
 color: 6c90bd
+research: wolframite
