@@ -1,4 +1,4 @@
-const wandura = extend(Planet, "wandura", Planets.sun, 2.8, 1, {
+const wandura = extend(Planet, "wandura", Planets.sun, 2, 1, {
   localizedName: "Wandura",
   generator: new SerpuloPlanetGenerator(),
   bloom: true,
