@@ -1,8 +1,8 @@
-const wandura = extend(Planet, "wandura", Planets.sun, 3, 1, {
+const wandura = extend(Planet, "wandura", Planets.sun, 2, 1.5, {
   localizedName: "Wandura",
   generator: new SerpuloPlanetGenerator(),
   bloom: true,
-  radius: 3,
+  radius: 2,
   accessible: true, 
   hasAtmosphere: true,
   atmosphereColor: Color.valueOf("ff0000"),
