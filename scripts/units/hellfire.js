@@ -1,7 +1,7 @@
 const hellfire = extendContent(UnitType, "hellfire", {});
 hellfire.constructor = () => extend(UnitEntity, {
   destroy(){
-    print("Cease.");
+    if(this.dead) this.super$destroy();
   },
   remove(){
     if(this.dead) this.super$remove();
