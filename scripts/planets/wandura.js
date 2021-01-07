@@ -9,4 +9,4 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1.8, {
   atmosphereRadIn: 4.4,
   atmosphereRadOut: 8.6
 });
-wandura.meshLoader = () => extend(HexMesh, wandura, 3, {});
+wandura.meshLoader = () => extend(HexMesh, wandura, 8.5, {});
