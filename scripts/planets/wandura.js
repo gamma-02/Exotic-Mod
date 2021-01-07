@@ -2,11 +2,11 @@ const wandura = extend(Planet, "wandura", Planets.sun, 2, 1.5, {
   localizedName: "Wandura",
   generator: new SerpuloPlanetGenerator(),
   bloom: true,
-  radius: 2,
+  radius: 1,
   accessible: true, 
   hasAtmosphere: true,
   atmosphereColor: Color.valueOf("ff0000"),
-  atmosphereRadIn: 4.4,
-  atmosphereRadOut: 8.6
+  atmosphereRadIn: 0.02,
+  atmosphereRadOut: 0.3
 });
 wandura.meshLoader = () => extend(HexMesh, wandura, 7.6, {});
