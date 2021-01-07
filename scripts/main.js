@@ -1,4 +1,5 @@
 require("units/hellfire");
+require("planets/wandura");
 
 var lastStand = extend(SectorPreset, "last-stand", Planets.serpulo, 69, {
   localizedName: "Last Stand",
