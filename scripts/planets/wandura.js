@@ -1,4 +1,4 @@
-const wandura = extend(Planet, "wandura", Planets.sun, 2.5, 1.4, {
+const wandura = extend(Planet, "wandura", Planets.sun, 3, 1, {
   localizedName: "Wandura",
   generator: new SerpuloPlanetGenerator(),
   bloom: true,
@@ -7,6 +7,6 @@ const wandura = extend(Planet, "wandura", Planets.sun, 2.5, 1.4, {
   hasAtmosphere: true,
   atmosphereColor: Color.valueOf("ff0000"),
   atmosphereRadIn: 0.02,
-  atmosphereRadOut: 0.3
+  atmosphereRadOut: 0.5
 });
 wandura.meshLoader = () => extend(HexMesh, wandura, 7.6, {});
