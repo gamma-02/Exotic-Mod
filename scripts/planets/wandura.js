@@ -2,7 +2,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1.8, {
   localizedName: "Wandura",
   generator: new SerpuloPlanetGenerator(),
   bloom: true,
-  radius: 15,
+  radius: 5,
   accessible: true, 
   hasAtmosphere: true,
   atmosphereColor: Color.valueOf("ff0000"),
