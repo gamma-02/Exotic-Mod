@@ -7,6 +7,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
   hasAtmosphere: true,
   atmosphereColor: Color.valueOf("ff0000"),
   atmosphereRadIn: 0.02,
-  atmosphereRadOut: 0.5
+  atmosphereRadOut: 0.5,
+  startSector: 15
 });
 wandura.meshLoader = () => extend(HexMesh, wandura, 7.6, {});
