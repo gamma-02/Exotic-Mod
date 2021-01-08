@@ -1,3 +1,4 @@
+const planetGen = global.exotic-mod.planetgen
 const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
   localizedName: "Wandura",
   generator: planetGen.wandura,
