@@ -12,7 +12,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 3, 1, {
 });
 wandura.meshLoader = () => extend(HexMesh, wandura, 8.4, {});
 
-var lastStand = extend(SectorPreset, "last-stand", Planets.wandura, 69, {
+var lastStand = extend(SectorPreset, "last-stand", wandura, 69, {
   localizedName: "Last Stand",
   difficulty: 25,
   captureWave: 150,
