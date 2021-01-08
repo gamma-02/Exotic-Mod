@@ -1,5 +1,5 @@
 //Thank you Gdeft for the planet generator from substructure! helped a lot
-const WanduraPlanetGenerator = extend(PlanetGenerator, {
+const wanduraGenerator = extend(PlanetGenerator, {
     rawHeight(position){
         position = Tmp.v33.set(position).scl(this.scl);
         return (Mathf.pow(this.noise.octaveNoise3D(7, 0.5, 1 / 3, position.x, position.y, position.z), 2.3) + this.waterOffset) / (1 + this.waterOffset);
@@ -79,7 +79,7 @@ const WanduraPlanetGenerator = extend(PlanetGenerator, {
 
                 this.connected.add(to);
                 
-                const gend = WanduraPlanetGenerator;
+                const gend = wanduraGenerator;
                 let nscl = rand.random(20, 60);
                 let stroke = rand.random(4, 12);
                 
@@ -286,7 +286,7 @@ const WanduraPlanetGenerator = extend(PlanetGenerator, {
         };
     } 
 });
-WanduraPlanetGenerator.arr = [   
+wanduraGenerator.arr = [   
     [Blocks.deepwater, Blocks.darksandWater, Blocks.sandWater, Blocks.sand, Blocks.craters, Blocks.sand, Blocks.sand, Blocks.basalt, Blocks.dirt, Blocks.dirt, Blocks.dirt, Blocks.dirt, Blocks.mud],
     [Blocks.deepwater, Blocks.darksandWater, Blocks.sandWater, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.metalFloorDamaged, Blocks.dacite, Blocks.dirt, Blocks.dirt, Blocks.mud, Blocks.dirt, Blocks.mud],
     [Blocks.deepwater, Blocks.sandWater, Blocks.sand, Blocks.sand, Blocks.metalFloorDamaged, Blocks.metalFloorDamaged, Blocks.dirt, Blocks.basalt, Blocks.basalt, Blocks.basalt, Blocks.mud, Blocks.dirt, Blocks.mud],
@@ -303,12 +303,12 @@ WanduraPlanetGenerator.arr = [
     [Blocks.darksandWater, Blocks.darksandWater, Blocks.darksand, Blocks.sand, Blocks.craters, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.darksandTaintedWater, Blocks.stone, Blocks.stone, Blocks.stone],
     [Blocks.darksandWater, Blocks.sandWater, Blocks.sand, Blocks.craters, Blocks.craters, Blocks.craters, Blocks.sand, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.dirt, Blocks.dacite, Blocks.mud]
 ];
-WanduraPlanetGenerator.rid = new Packages.arc.util.noise.RidgedPerlin(1, 2);
-WanduraPlanetGenerator.basegen = new BaseGenerator();
-WanduraPlanetGenerator.scl = 5;
-WanduraPlanetGenerator.waterOffset = 0.07;
-WanduraPlanetGenerator.water = 2 / WanduraPlanetGenerator.arr[0].length;
+wanduraGenerator.rid = new Packages.arc.util.noise.RidgedPerlin(1, 2);
+wanduraGenerator.basegen = new BaseGenerator();
+wanduraGenerator.scl = 5;
+wanduraGenerator.waterOffset = 0.07;
+wanduraGenerator.water = 2 / WanduraPlanetGenerator.arr[0].length;
 
 module.exports = {
-    wandura: WanduraPlanetGenerator
+    wandura: wanduraGenerator
 };
