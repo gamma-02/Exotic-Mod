@@ -5,7 +5,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
   radius: 1,
   accessible: true, 
   hasAtmosphere: true,
-  atmosphereColor: Color.valueOf("ff0000"),
+  atmosphereColor: Color.valueOf("333f7f"),
   atmosphereRadIn: 0.02,
   atmosphereRadOut: 0.5,
   startSector: 15
