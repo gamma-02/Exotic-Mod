@@ -1,4 +1,5 @@
-const planetGen = global.exotic-mod.planetgen
+var exotic = Vars.content.getByName(ContentType.mod, "exotic-mod");
+const planetGen = global.exotic.planetgen;
 const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
   localizedName: "Wandura",
   generator: planetGen.wandura,
