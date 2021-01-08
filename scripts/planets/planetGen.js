@@ -307,7 +307,7 @@ wanduraGenerator.rid = new Packages.arc.util.noise.RidgedPerlin(1, 2);
 wanduraGenerator.basegen = new BaseGenerator();
 wanduraGenerator.scl = 5;
 wanduraGenerator.waterOffset = 0.07;
-wanduraGenerator.water = 2 / WanduraPlanetGenerator.arr[0].length;
+wanduraGenerator.water = 2 / wanduraGenerator.arr[0].length;
 
 module.exports = {
     wandura: wanduraGenerator
