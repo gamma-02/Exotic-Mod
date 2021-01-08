@@ -185,21 +185,18 @@ const wanduraGenerator = extend(PlanetGenerator, {
         let addscl = 1.3;
 
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.25 * addscl){
-            ores.add(Vars.content.getByName(ContentType.block, "exotic-mod-ore-cookienite"));
+            ores.add(Blocks.oreCoal);
         };
 
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 1, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.5 * addscl){
-            ores.add(Vars.content.getByName(ContentType.block, "exotic-mod-ore-amethyst"));
+            ores.add(Blocks.oreTitanium);
         };
 
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 2, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.7 * addscl){
-            ores.add(Vars.content.getByName(ContentType.block, "exotic-mod-ore-draconium"));
+            ores.add(Blocks.oreThorium);
         };
         if(rand.chance(0.25)){
             ores.add(Blocks.oreScrap);
-        };
-        if(rand.chance(0.25)){
-            ores.add(Vars.content.getByName(ContentType.block("exotic-mod-ore-wolframite"));
         };
         let frequencies = new FloatSeq();
         for(let i = 0; i < ores.size; i++){
