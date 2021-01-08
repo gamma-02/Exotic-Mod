@@ -1,6 +1,6 @@
 const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
   localizedName: "Wandura",
-  generator: new WanduraPlanetGenerator(),
+  generator: planetGen.wandura,
   bloom: true,
   radius: 1,
   accessible: true, 
