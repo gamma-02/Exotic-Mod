@@ -12,7 +12,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
   atmosphereRadOut: 0.5,
   startSector: 15,
   generator: extend(SerpuloPlanetGenerator, {
-    rid: extend(arc.util.noise.RidgedPerlin, 1, 2, {}),
+    rid: extend(Packages.arc.util.noise.RidgedPerlin, 1, 2, {}),
     scl: 5,
     waterOffset: 0.07,
     arr: [
