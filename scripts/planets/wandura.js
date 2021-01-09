@@ -14,7 +14,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
 });
 wandura.meshLoader = () => extend(HexMesh, this, 8, {});
 wandura.generator = () => extend(SerpuloPlanetGenerator, {
-  rid: extend(arc.util.noise.RidgedPerlin, 1, 2{}),
+  rid: extend(arc.util.noise.RidgedPerlin, 1, 2, {}),
   scl: 5,
   waterOffset: 0.07,
   arr: [
