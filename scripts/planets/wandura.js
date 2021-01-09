@@ -33,7 +33,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
     dec: ObjectMap.of(),
     tar: ObjectMap.of(),
     water: 2 / 13
-  })
+  });
 });
 wandura.meshLoader = () => extend(HexMesh, Planets.sun, 8, {});
 var lastStand = extend(SectorPreset, "last-stand", wandura, 69, {
