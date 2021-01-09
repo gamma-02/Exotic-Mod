@@ -31,8 +31,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
       [basaltMagnetizedSlag, Blocks.basalt, Blocks.sand, Blocks.grass, Blocks.grass, Blocks.sand, Blocks.grass, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass]
     ],
     dec: ObjectMap.of(),
-    tar: ObjectMap.of(),
-    water: 2 / 13,
+    tar: ObjectMap.of()
   })
 });
 wandura.meshLoader = () => extend(HexMesh, Planets.sun, 8, {});
