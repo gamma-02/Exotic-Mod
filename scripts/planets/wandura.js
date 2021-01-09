@@ -18,9 +18,9 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
     arr: [
       [magnetizedSlag, basaltMagnetizedSlag, Blocks.basalt, Blocks.basalt, Blocks.basalt, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, basaltMagnetizedSlag, Blocks.stone, Blocks.stone],
       [magnetizedSlag, basaltMagnetizedSlag, Blocks.basalt, Blocks.basalt, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, basaltMagnetizedSlag, Blocks.stone, Blocks.stone, Blocks.stone],
-      [magnetizedSlag, basaltMagnetizedSlag, Blocks.basalt, Blocks.darksand, Blocks.char, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, basaltMagnetizedSlag, Blocks.stone, Blocks.stone, Blocks.stone],
-      [magnetizedSlag, basaltMagnetizedSlag, Blocks.darksand, Blocks.char, Blocks.char, Blocks.char, Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.sand, Blocks.grass, Blocks.grass],
-      [magnetizedSlag, magnetizedSlag, basaltMagnetizedSlag, Blocks.darksand, Blocks.char, Blocks.darksand, Blocks.darksand, Blocks.basalt, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.grass],
+      [magnetizedSlag, basaltMagnetizedSlag, Blocks.basalt, Blocks.darksand, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, basaltMagnetizedSlag, Blocks.stone, Blocks.stone, Blocks.stone],
+      [magnetizedSlag, basaltMagnetizedSlag, Blocks.darksand, Blocks.charr, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.sand, Blocks.grass, Blocks.grass],
+      [magnetizedSlag, magnetizedSlag, basaltMagnetizedSlag, Blocks.darksand, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.basalt, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.grass],
       [magnetizedSlag, magnetizedSlag, basaltMagnetizedSlag, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.grass, Blocks.grass, Blocks.sand, Blocks.sand, Blocks.grass, Blocks.sand, Blocks.grass],
       [magnetizedSlag, basaltMagnetizedSlag, Blocks.darksand, Blocks.darksand, Blocks.grass, Blocks.grass, Blocks.sand, Blocks.basalt, Blocks.basalt, Blocks.basalt, Blocks.grass, Blocks.sand, Blocks.grass],
       [Blocks.taintedWater, Blocks.darksandTaintedWater, Blocks.basalt, Blocks.basalt, Blocks.basalt, Blocks.grass, Blocks.basalt, Blocks.slag, Blocks.basalt, Blocks.grass, Blocks.sand, Blocks.grass, Blocks.grass],
