@@ -10,7 +10,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
   atmosphereColor: Color.valueOf("6c180f"),
   atmosphereRadIn: 0.02,
   atmosphereRadOut: 0.5,
-  startSector: 15
+  startSector: 15,
   generator: extend(SerpuloPlanetGenerator, {
     rid: extend(arc.util.noise.RidgedPerlin, 1, 2, {}),
     scl: 5,
@@ -33,7 +33,7 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
     dec: ObjectMap.of(),
     tar: ObjectMap.of(),
     water: 2 / 13
-  });
+  })
 });
 wandura.meshLoader = () => extend(HexMesh, this, 8, {});
 var lastStand = extend(SectorPreset, "last-stand", wandura, 69, {
