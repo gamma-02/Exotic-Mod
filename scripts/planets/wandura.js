@@ -36,7 +36,9 @@ const wandura = extend(Planet, "wandura", Planets.sun, 4, 1, {
       water: 2/13
     });
   return gen;
+  }
 });
+
 wandura.meshLoader = () => extend(HexMesh, Planets.sun, 8, {});
 var lastStand = extend(SectorPreset, "last-stand", wandura, 69, {
   localizedName: "Last Stand",
