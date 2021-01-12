@@ -1,2 +1,3 @@
 require("units/hellfire");
-require("planets/wandura");
+require("planets/planets");
+require("planets/sectorPresets");
