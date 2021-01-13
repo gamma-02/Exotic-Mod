@@ -183,12 +183,12 @@ const wanduraGenerator = extend(PlanetGenerator, {
 
         this.inverseFloodFill(this.tiles.getn(spawn.x, spawn.y));
 
-        let ores = Seq.with(Blocks.oreCopper, Blocks.oreLead, Blocks.oreCoal, Blocks.oreTitanium, Blocks.oreThorium, cookie, ame, wolf, draco);
+        let ores = Seq.with(Blocks.oreCopper, Blocks.oreLead, Blocks.oreCoal, Blocks.oreTitanium, Blocks.oreThorium);
         let poles = Math.abs(this.sector.tile.v.y);
         let nmag = 0.5;
         let scl = 1;
         let addscl = 1.3;
-
+/*
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.25* addscl){
             ores.add(cookie);
         };
@@ -207,7 +207,7 @@ const wanduraGenerator = extend(PlanetGenerator, {
         for(let i = 0; i < ores.size; i++){
             frequencies.add(rand.random(-0.1, 0.01) - i * 0.01 + poles * 0.04);
         };
-
+*/
         this.pass((x, y) => {
             if(!this.floor.asFloor().hasSurface()) return;
 
