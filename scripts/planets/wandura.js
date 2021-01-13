@@ -198,10 +198,10 @@ const wanduraGenerator = extend(PlanetGenerator, {
         };
 
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 2, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.7 * addscl){
-            ores.add(wolf);
+            ores.add(draco);
         };
         if(rand.chance(0.25)){
-            ores.add(draco);
+            ores.add(wolf);
         };
         let frequencies = new FloatSeq();
         for(let i = 0; i < ores.size; i++){
