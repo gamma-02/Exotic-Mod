@@ -203,11 +203,12 @@ const wanduraGenerator = extend(PlanetGenerator, {
         if(rand.chance(0.25)){
             ores.add(wolf);
         };
+*/
         let frequencies = new FloatSeq();
         for(let i = 0; i < ores.size; i++){
             frequencies.add(rand.random(-0.1, 0.01) - i * 0.01 + poles * 0.04);
         };
-*/
+
         this.pass((x, y) => {
             if(!this.floor.asFloor().hasSurface()) return;
 
