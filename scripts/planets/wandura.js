@@ -1,3 +1,8 @@
+var cookie = Vars.content.getByName(ContentType.block, "exotic-mod-ore-cookienite");
+var ame = Vars.content.getByName(ContentType.block, "exotic-mod-ore-amethyst");
+var wolf = Vars.content.getByName(ContentType.block, "exotic-mod-ore-wolframite");
+var draco = Vars.content.getByName(ContentType.block, "exotic-mod-ore-draconium");
+
 //Thank you Gdeft for the planet generator from substructure! helped a lot
 const wanduraGenerator = extend(PlanetGenerator, {
     rawHeight(position){
@@ -178,25 +183,25 @@ const wanduraGenerator = extend(PlanetGenerator, {
 
         this.inverseFloodFill(this.tiles.getn(spawn.x, spawn.y));
 
-        let ores = Seq.with(Blocks.oreCopper, Blocks.oreLead, Blocks.oreCoal, Blocks.oreTitanium, Blocks.oreThorium);
+        let ores = Seq.with(Blocks.oreCopper, Blocks.oreLead, Blocks.oreCoal, Blocks.oreTitanium, Blocks.oreThorium, cookie, ame, wolf, draco);
         let poles = Math.abs(this.sector.tile.v.y);
         let nmag = 0.5;
         let scl = 1;
         let addscl = 1.3;
 
-        if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.25 * addscl){
-            ores.add(Blocks.oreCoal);
+        if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.25* addscl){
+            ores.add(cookie);
         };
 
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 1, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.5 * addscl){
-            ores.add(Blocks.oreTitanium);
+            ores.add(ame);
         };
 
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 2, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.7 * addscl){
-            ores.add(Blocks.oreThorium);
+            ores.add(wolf);
         };
         if(rand.chance(0.25)){
-            ores.add(Blocks.oreScrap);
+            ores.add(draco);
         };
         let frequencies = new FloatSeq();
         for(let i = 0; i < ores.size; i++){
