@@ -288,8 +288,8 @@ const wanduraGenerator = extend(PlanetGenerator, {
         };
     } 
 });
-var magnetizedSlag = Vars.content.getByName(ContentType.block, "exotic-mod-deep-mag-slag");
-var basaltMagnetizedSlag = Vars.content.getByName(ContentType.block, "exotic-mod-basalt-mag-slag");
+var magnetizedSlag = Blocks.slag;
+var basaltMagnetizedSlag = Blocks.magmarock;
 wanduraGenerator.arr = [
   [magnetizedSlag, basaltMagnetizedSlag, Blocks.basalt, Blocks.basalt, Blocks.basalt, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, basaltMagnetizedSlag, Blocks.stone, Blocks.stone],
   [magnetizedSlag, basaltMagnetizedSlag, Blocks.basalt, Blocks.basalt, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, basaltMagnetizedSlag, Blocks.stone, Blocks.stone, Blocks.stone],
